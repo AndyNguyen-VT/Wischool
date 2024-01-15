@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.header__nav a{
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 16px;
+    color:rgba(64, 64, 64, 0.80);
+    font-weight: 600;
+
+}
+
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn{
+    border: none;
+    padding: 12px 24px;
+    border-radius: 3px;
+}
+
+.login{
+    color: #09B451;
+    background-color: transparent;
+}
+
+.register{
+    color: #fff;
+    background-color: #09B451;
+}
+
+.header-mobile{
+    display: none;
+}
+
+/* Đang CSS cho màn hình nhỏ hơn 1000px*/
+@media only screen and (max-width: 1000px){
+    .desktop{
+         display: none !important;
+    }
+    .header-mobile{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow:  0px 4px 8px 0px rgba(200, 200, 200, 0.25);
+        padding: 10px;
+    }
+
+    .header-mobile i {
+        font-size: 70px;
+    }
+
+    .header-mobile img{
+        width: 200px;
+    }
+
+    .header-mobile .logo{
+        display: flex;
+        align-items: center;
+    }
+
+
+    .header-mobile .logo i{
+        margin-right: 20px;
+    }
+}
